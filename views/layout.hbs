@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{title}}</title>
+    <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div id="myCarousel" class="carousel slide">
+        <!-- ÂÖ²¥£¨Carousel£©ÏîÄ¿ -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="images/firstpage.jpg" alt="First slide">
+            </div>
+            <div class="item">
+                <img src="images/mainbg.jpg" alt="Second slide">
+            </div>
+            <div class="item">
+                <img src="images/thankpage.png" alt="Third slide">
+            </div>
+        </div>
+        <script>
+            $(document).ready(function() {
+                $("#myCarousel").click(function() {
+                    $(this).carousel('next');
+                });
+            });
+        </script>
+    </div>
+    {{{body}}}
+</body>
+</html>
